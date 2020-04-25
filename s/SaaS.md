@@ -1,7 +1,7 @@
 
 # SaaS
 
-英文全称：Software-as-a-service
+英文全称：Software-as-a-service  
 中文全称：软件服务
 
 参考资料：
