@@ -1,0 +1,34 @@
+
+- A
+    - [Alpha Testing](a/Alpha_Testing.md)
+    - [AUT](a/AUT.md)
+- B
+    - [Beta Testing](b/Beta_Testing.md)
+- C
+    - [CLI](c/CLI.md)
+- D
+    - [Daily Build](d/Daily_Build.md)
+    - [DVCS](d/DVCS.md)
+    - [Dynamic Testing](d/Dynamic_Testing.md)
+- F
+    - [Fuzz Testing](f/Fuzz_Testing.md)
+- G
+    - [GUI](g/GUI.md)
+- H
+    - [HC](h/HC.md)
+- I
+    - [IaaS](i/IaaS.md)
+- J
+    - [JD](j/JD.md)
+- O
+    - [On-the-fly](o/On-the-fly.md)
+    - [Out-of-box](o/Out-of-box.md)
+- P
+    - [PaaS](p/PaaS.md)
+    - [PRD](p/PRD.md)
+- S
+    - [SaaS](s/SaaS.md)
+    - [Static Testing](s/Static_Testing.md)
+    - [SUT](s/SUT.md)
+- V
+    - [VCS](v/VCS.md)
