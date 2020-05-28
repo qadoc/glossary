@@ -1,17 +1,17 @@
 
 - A
-    - [Alpha Testing](a/Alpha_Testing.md)
+    - [Alpha Testing | α 测试](a/Alpha_Testing.md)
     - [AUT](a/AUT.md)
 - B
-    - [Beta Testing](b/Beta_Testing.md)
+    - [Beta Testing | β 测试](b/Beta_Testing.md)
 - C
     - [CLI](c/CLI.md)
 - D
-    - [Daily Build](d/Daily_Build.md)
+    - [Daily Build | 每日构建](d/Daily_Build.md)
     - [DVCS](d/DVCS.md)
-    - [Dynamic Testing](d/Dynamic_Testing.md)
+    - [Dynamic Testing | 动态测试](d/Dynamic_Testing.md)
 - F
-    - [Fuzz Testing](f/Fuzz_Testing.md)
+    - [Fuzz Testing | 模糊测试](f/Fuzz_Testing.md)
 - G
     - [GUI](g/GUI.md)
 - H
@@ -26,9 +26,10 @@
 - P
     - [PaaS](p/PaaS.md)
     - [PRD](p/PRD.md)
+    - [Precision Testing | 精准测试](p/Precision_Testing.md)
 - S
     - [SaaS](s/SaaS.md)
-    - [Static Testing](s/Static_Testing.md)
+    - [Static Testing | 静态测试](s/Static_Testing.md)
     - [SUT](s/SUT.md)
 - V
     - [VCS](v/VCS.md)

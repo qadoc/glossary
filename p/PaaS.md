@@ -1,7 +1,7 @@
 
 # PaaS
 
-英文全称：Platform-as-a-service
+英文全称：Platform-as-a-service  
 中文全称：平台服务
 
 参考资料：
