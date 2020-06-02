@@ -5,12 +5,17 @@
 - B
     - [Beta Testing | β 测试](b/Beta_Testing.md)
 - C
+    - [CD](c/CD.md)
+    - [CI](c/CI.md)
     - [CLI](c/CLI.md)
 - D
     - [Daily Build | 每日构建](d/Daily_Build.md)
     - [DVCS](d/DVCS.md)
     - [Dynamic Testing | 动态测试](d/Dynamic_Testing.md)
+- E
+    - [End-to-End Testing | 端到端测试](e/End-to-End_Testing.md)
 - F
+    - [FT | Feature Team | 特性团队](f/FT.md)
     - [Fuzz Testing | 模糊测试](f/Fuzz_Testing.md)
 - G
     - [GUI](g/GUI.md)
@@ -29,6 +34,9 @@
     - [Precision Testing | 精准测试](p/Precision_Testing.md)
 - S
     - [SaaS](s/SaaS.md)
+    - [SDLC](s/SDLC.md)
+    - [SIT | System Integration Testing | 系统集成测试](s/SIT.md)
+    - [ST | System Testing | 系统测试](s/ST.md)
     - [Static Testing | 静态测试](s/Static_Testing.md)
     - [SUT](s/SUT.md)
 - V
