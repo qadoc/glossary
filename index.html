@@ -148,7 +148,11 @@
 
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
+      if(window.location.hostname == "localhost"){
+        navigator.serviceWorker.register('sw.js');
+      }else{
+        navigator.serviceWorker.register('glossary/sw.js');
+      }
     }
 
   </script>
