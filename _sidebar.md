@@ -1,41 +1,41 @@
 
-* [A](./_i_A.md)
+* A
   * [AUT](./A/AUT.md)
   * [Alpha Testing](./A/Alpha_Testing.md)
-* [B](./_i_B.md)
+* B
   * [Beta Testing](./B/Beta_Testing.md)
-* [C](./_i_C.md)
+* C
   * [CD](./C/CD.md)
   * [CI](./C/CI.md)
   * [CLI](./C/CLI.md)
-* [D](./_i_D.md)
+* D
   * [DVCS](./D/DVCS.md)
   * [Daily Build](./D/Daily_Build.md)
   * [Dynamic Testing](./D/Dynamic_Testing.md)
-* [E](./_i_E.md)
+* E
   * [End-to-End Testing](./E/End-to-End_Testing.md)
-* [F](./_i_F.md)
+* F
   * [FT](./F/FT.md)
   * [Fuzz Testing](./F/Fuzz_Testing.md)
-* [G](./_i_G.md)
+* G
   * [GUI](./G/GUI.md)
-* [H](./_i_H.md)
+* H
   * [HC](./H/HC.md)
-* [I](./_i_I.md)
+* I
   * [IaaS](./I/IaaS.md)
-* [J](./_i_J.md)
+* J
   * [JD](./J/JD.md)
-* [M](./_i_M.md)
+* M
   * [Mutation Analysis](./M/Mutation_Analysis.md)
   * [Mutation Testing](./M/Mutation_Testing.md)
-* [O](./_i_O.md)
+* O
   * [On the fly](./O/On_the_fly.md)
   * [Out of box](./O/Out_of_box.md)
-* [P](./_i_P.md)
+* P
   * [PRD](./P/PRD.md)
   * [PaaS](./P/PaaS.md)
   * [Precision Testing](./P/Precision_Testing.md)
-* [S](./_i_S.md)
+* S
   * [SDLC](./S/SDLC.md)
   * [SIT](./S/SIT.md)
   * [ST](./S/ST.md)
@@ -43,5 +43,5 @@
   * [SaaS](./S/SaaS.md)
   * [Shebang](./S/Shebang.md)
   * [Static Testing](./S/Static_Testing.md)
-* [V](./_i_V.md)
+* V
   * [VCS](./V/VCS.md)

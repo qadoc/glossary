@@ -142,8 +142,13 @@ def scan_dir(dir_path='.', level=0):
         # Write entry in the sidebar file
         entry_display_name = make_display_name_from_path(entry_path)
 
-        sidebar_file.write(
-            f"{'  ' * level}* [{entry_display_name}]({entry_path_encode})\n")
+        # glossary 项目：不需要文件夹索引文件，所以这里一级目录不加链接（索引文件链接）。
+        if len(entry_file_name) == 1:
+            sidebar_file.write(
+                f"{'  ' * level}* {entry_display_name}\n")
+        else:
+            sidebar_file.write(
+                f"{'  ' * level}* [{entry_display_name}]({entry_path_encode})\n")
 
         # Save file
         sidebar_file.close()
@@ -177,9 +182,10 @@ def scan_dir(dir_path='.', level=0):
         entries = sorted(entries)
         sublevel = level + 1
 
-        if level > 0:
-            # Create folder index (skip root directory)
-            create_dir_index_file(dir_path)
+        # glossary 项目：只有一级目录，不需要文件夹索引文件，所以这里注释了
+        # if level > 0:
+        #     # Create folder index (skip root directory)
+        #     create_dir_index_file(dir_path)
 
         for entry_file_name in entries:
             # Ignore entries starting with _ (so also _i_ for indexes) or .
