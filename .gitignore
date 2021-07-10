@@ -1,1 +1,5 @@
 .idea
+
+# doscify 临时文件
+_i_*.md
+_sidebar.md

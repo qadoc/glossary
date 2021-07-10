@@ -4,23 +4,15 @@
 英文简写：E2E Testing  
 中文全称：端到端测试，或 E2E 测试
 
-## 定义
-
 在英文中，`End-to-End` 表示包括一个过程的所有阶段，在计算机中也表示一个应用程序工作所需的一切（包括它的依赖）。
 
 端到端测试是一种软件测试方法，用于测试应用程序流是否自始至终都如预期一样正确。
 
-## 目的
+端到端测试的目的是模拟真实的用户场景并验证被测系统及其组件的集成性和数据完整性。另一种说法是，端到端测试的目的是识别系统依赖关系，并确保在各种系统（包括外部依赖和多个内部系统）之间传递正确的信息。
 
-端到端测试的目的是模拟真实的用户场景并验证被测系统及其组件的集成性和数据完整性。
+![m1/TOIMG0c9b00710013447N.png](https://img.liyunx.com/m1/TOIMG0c9b00710013447N.png ':size=80%')
 
-另一种说法是，端到端测试的目的是识别系统依赖关系，并确保在各种系统（包括外部依赖和多个内部系统）之间传递正确的信息。
-
-## 端到端测试方法
-
-![](https://static1.smartbear.co/smartbear/media/images/landingpages/testcomplete/end-to-end-graphic.png)
-
-### 水平端到端测试
+## 水平端到端测试
 
 该测试要求测试者从模拟用户的角度出发，从头到尾完整地执行一个用户场景并验证，有时也叫全链路测试。比如，一个在电子商务平台购买商品的用户场景：
 
@@ -64,7 +56,7 @@
 - 防止问题进入生产
 - 对系统一切正常更有信心
 
-### 垂直端到端测试
+## 垂直端到端测试
 
 该测试要求对应用程序架构的每一层进行测试，有时也叫分层测试（测试金字塔）。
 
@@ -79,11 +71,11 @@
 - 更集中的测试
 - 对安全关键软件有用
 
-## 端到端测试实践
+**端到端测试实践**
 
 1. [Testing on the Toilet: What Makes a Good End-to-End Test?](https://testing.googleblog.com/2016/09/testing-on-toilet-what-makes-good-end.html)
 
-## 参考资料
+**参考资料**
 
 1. [Meaning of end-to-end in English](https://dictionary.cambridge.org/us/dictionary/english/end-to-end)
 1. [End-to-End Testing](https://www.tutorialspoint.com/software_testing_dictionary/end_to_end_testing.htm)

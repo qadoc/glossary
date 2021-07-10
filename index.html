@@ -7,6 +7,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  
   <script>
   var _hmt = _hmt || [];
   (function() {
@@ -16,51 +17,111 @@
     s.parentNode.insertBefore(hm, s);
   })();
   </script>
+
 </head>
 <body>
   <div id="app">努力加载中，客官请稍等...</div>
   <script>
+    gitalkConfig = {
+      clientID: 'fa1cbccd151a942f2edf',
+      clientSecret: '0a0cfa1b21c18aa21a253d4f4053c979ac3fdcd5',
+      repo: 'glossary',
+      owner: 'qadoc',
+      admin: ['ly1012'],
+      perPage: 20,
+      // language: "en",
+      labels: ["💬Gitalk"],
+      pagerDirection: "last",
+      distractionFreeMode: false
+    };
+
     window.$docsify = {
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md', // See #301
-        '/.*/_navbar.md': '/_navbar.md' // See #301
-      },
+
+      // ***** docsify: GENERAL *****
       name: '软件测试术语表',
       repo: 'https://github.com/qadoc/glossary',
       loadSidebar: true,
       loadNavbar: true,
       coverpage: true,
+      formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}',
+
+      // ***** docsify: NAVIGATION *****
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md', // See #301
+        '/.*/_navbar.md': '/_navbar.md' // See #301
+      },
       subMaxLevel: 3,
       // basePath: 'https://raw.githubusercontent.com/qadoc/qa-interview/master/',  //生产环境
       // basePath: '/',  //开发环境
-      // 完整配置参数
+      
+      // ***** docsify: plugins *****
+      plugins: [
+        function (hook, vm) {
+          var year = new Date().getFullYear();
+          var footer = 
+          [
+            '\n\n<hr/>\n\n',
+            '文章最后编辑于 {docsify-updated}  \n',
+            '[QAdoc](https://qadoc.cn) ©2020-'+year+' 原创作品，采用 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)，转载请注明出处。\n',
+            '<div id="gitalk-container"></div>'
+          ].join('');
+
+          hook.beforeEach(function (html) {
+            // console.log(html + footer_lasttime);
+            return html + footer
+          });
+
+          // 参考：https://github.com/l-hammer/You-need-to-know-css/blob/master/libs/index.js
+          hook.doneEach(function() {
+            var label, domObj, main, divEle, gitalk;
+            label = vm.route.path.split("/").pop();
+            domObj = Docsify.dom;
+            main = domObj.getNode("#main");
+
+            /**
+             * render gittalk
+             */
+            Array.apply(
+              null,
+              document.querySelectorAll("div.gitalk-container")
+            ).forEach(function(ele) {
+              ele.remove();
+            });
+            divEle = domObj.create("div");
+            divEle.id = "gitalk-container-" + label;
+            divEle.className = "gitalk-container";
+            divEle.style = "width: " + main.clientWidth + "px; margin: 0 auto 20px;";
+            domObj.appendTo(domObj.find(".content"), divEle);
+            gitalk = new Gitalk(
+              Object.assign(gitalkConfig, { id: !label ? "home" : label })
+            );
+            gitalk.render("gitalk-container-" + label);
+          });
+    
+
+        }
+      ],
+
+      // -----------------------------------------------------------------
+
+      // ***** plugins: Search Plugin Settings ***** 
       search: {
         maxAge: 86400000, // 过期时间，单位毫秒，默认一天
         paths: 'auto', // or 'auto'
         placeholder: '搜索',
         noData: '暂无结果'
       },
-      plugins: [
-        function (hook) {
-          var footer = [
-            '<hr/>',
-            '<footer>',
-            '<span style="padding-right:1em"><a href="https://qadoc.org">QAdoc</a> &copy;2020</span>',
-            '<span>原创作品，采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>，转载请注明出处。</span>',
-            '</footer>'
-          ].join('')
 
-          hook.afterEach(function (html) {
-            return html + footer
-          })
-        }
-      ]
+      // ***** plugins: docsify-copy-code Plugin Settings *****
+      // -----------------------------------------------------------------
+      copyCode: {
+        buttonText : 'Copy',    // default: Copy to clipboard
+        errorText  : 'Error',
+        successText: 'Copied'
+      },
+
     }
-  </script>
-  <script>
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
-    }
+
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <!-- 全文搜索插件 -->
@@ -73,5 +134,24 @@
   <script src="//unpkg.com/docsify-copy-code"></script>
   <!-- 代码高亮 -->
   <script src="//unpkg.com/prismjs/components/prism-sql.js"></script>
+
+  <!-- 插件：侧边栏折叠插件 -->
+  <!-- <script src="//unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> -->
+  
+  <!-- 插件：侧边栏图标 -> 文件夹 -->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" /> -->
+
+  <!-- Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+
+  </script>
+
 </body>
 </html>

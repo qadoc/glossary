@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "D:\\Program\\Python\\Python38\\python.exe",
+    "files.exclude": {
+        "**/_i_*": true,
+        // "_sidebar.md": true,
+        // "assets": true,
+        ".idea": true,
+        ".nojekyll": true
+      }
+}
