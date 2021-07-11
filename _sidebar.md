@@ -45,3 +45,5 @@
   * [Static Testing](./S/Static_Testing.md)
 * V
   * [VCS](./V/VCS.md)
+* 专题
+  * [软件开发测试模型](./专题/软件开发测试模型.md)

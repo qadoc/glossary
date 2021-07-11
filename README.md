@@ -21,5 +21,5 @@
 你可以这样参与到该项目：
 
 1. 从 [这里](https://github.com/qadoc/glossary) 拉取一个分支，提交词条和词条解释，或补充修改词条内容。
-1. 在 [Issues](https://github.com/qadoc/glossary/issues) 中提交你发现的词条错误或建议反馈。
+1. 在 [Issues](https://github.com/qadoc/glossary/issues) 中提交你发现的词条错误或建议反馈，或者在词条下面的评论区留言。
 

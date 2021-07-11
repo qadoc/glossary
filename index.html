@@ -120,6 +120,15 @@
         successText: 'Copied'
       },
 
+      // ***** plugins: Tab Plugin Settings *****
+      tabs: {
+        persist    : true,      // default
+        sync       : false,      // default: true
+        theme      : 'classic', // default
+        tabComments: true,      // default
+        tabHeadings: true       // default
+      },
+
     }
 
   </script>
@@ -141,6 +150,9 @@
   
   <!-- 插件：侧边栏图标 -> 文件夹 -->
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" /> -->
+
+  <!-- 插件：多个选项卡 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
 
   <!-- Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">

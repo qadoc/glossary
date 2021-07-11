@@ -5,6 +5,7 @@
 
 例如，以指令 `#!/bin/sh` 开头的文件在执行时会实际调用 `/bin/sh` 程序（通常是 `Bourne shell` 或兼容的 shell，例如 bash、dash 等）来执行。这行内容也是 shell 脚本的标准起始行。
 
-参考资料：
+**参考资料**
 
 1. [Shebang](https://zh.wikipedia.org/wiki/Shebang)
+

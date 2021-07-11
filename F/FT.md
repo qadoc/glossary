@@ -14,7 +14,9 @@
 
 ![](https://less.works/img/structure/component-vs-feature-teams.png)
 
-参考资料：
+[//]: 备用链接：![m1/TOIMG3cb2d0710090521N.png](https://img.liyunx.com/m1/TOIMG3cb2d0710090521N.png)
+
+**参考资料**
 
 1. [featureteams.org](https://featureteams.org/)
 1. [当谈论Feature Team时我们在谈些什么？](https://insights.thoughtworks.cn/when-we-talking-about-feature-team/)
