@@ -53,6 +53,19 @@
       subMaxLevel: 3,
       // basePath: 'https://raw.githubusercontent.com/qadoc/qa-interview/master/',  //生产环境
       // basePath: '/',  //开发环境
+
+      // ***** docsify: markdown *****
+      markdown: {
+          renderer: {
+              image: function(href, title, text) {
+                  // 按照原来的渲染 img
+                  var image_html = this.origin.image.apply(this, arguments)
+                  // 用 figure 包一下图片，实现居中
+                  return '<figure style="text-align:center;">' + image_html + '<figcaption style="color:grey;">' + text +
+                      '</figcaption></figure>'
+              }
+          }
+      },
       
       // ***** docsify: plugins *****
       plugins: [
