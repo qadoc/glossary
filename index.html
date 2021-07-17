@@ -88,6 +88,7 @@
           hook.doneEach(function() {
             var label, domObj, main, divEle, gitalk;
             label = vm.route.path.split("/").pop();
+            label_decode = decodeURIComponent(label);
             domObj = Docsify.dom;
             main = domObj.getNode("#main");
 
@@ -106,7 +107,7 @@
             divEle.style = "width: " + main.clientWidth + "px; margin: 0 auto 20px;";
             domObj.appendTo(domObj.find(".content"), divEle);
             gitalk = new Gitalk(
-              Object.assign(gitalkConfig, { id: !label ? "home" : label })
+              Object.assign(gitalkConfig, { id: !label_decode ? "home" : label_decode })
             );
             gitalk.render("gitalk-container-" + label);
           });
