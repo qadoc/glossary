@@ -50,7 +50,7 @@
         '/.*/_sidebar.md': '/_sidebar.md', // See #301
         '/.*/_navbar.md': '/_navbar.md' // See #301
       },
-      subMaxLevel: 3,
+      subMaxLevel: 0,
       // basePath: 'https://raw.githubusercontent.com/qadoc/qa-interview/master/',  //生产环境
       // basePath: '/',  //开发环境
 
@@ -142,6 +142,12 @@
         tabHeadings: true       // default
       },
 
+      // ***** plugins: docsify-plugin-toc ***** 
+      toc: {
+        tocMaxLevel: 5,
+        target: 'h2, h3, h4, h5, h6'
+      }
+
     }
 
   </script>
@@ -166,6 +172,9 @@
 
   <!-- 插件：多个选项卡 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+
+  <!-- 插件：文章目录 ToC -->
+  <script src="//unpkg.com/docsify-plugin-toc"></script>
 
   <!-- Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
