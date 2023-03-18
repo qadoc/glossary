@@ -31,13 +31,13 @@
 
 **CI、CD 区别**
 
-![持续集成](https://img.liyunx.com/m1/TOIMG17f280710091452N.png ':size=80%')
+![持续集成](https://img.liyunx.com/m1/TOIMG17f280710091452N.png ':size=60%')
 
 虚线框内的 `TEST` 指单元测试。
 
 持续集成示意图：自动完成单元测试、构建过程。
 
-![持续交付](https://img.liyunx.com/m1/TOIMGdcb130710091625N.png ':size=80%')
+![持续交付](https://img.liyunx.com/m1/TOIMGdcb130710091625N.png ':size=50%')
 
 `TEST` 指测试环境。  
 `STAGING` 指类生产环境。  
@@ -48,7 +48,7 @@
 1. 手动批准 + 手动部署
 2. 手动批准 + 自动部署
 
-![持续部署](https://img.liyunx.com/m1/TOIMG528a90710091701N.png ':size=80%')
+![持续部署](https://img.liyunx.com/m1/TOIMG528a90710091701N.png ':size=50%')
 
 持续部署示意图：持续部署是一个技术行为，软件更改会通过流水线自动部署到生产环境，即无须明确批准自动上线。
 
