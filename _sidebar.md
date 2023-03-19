@@ -13,7 +13,7 @@
   * [CD ~ 持续交付](./C/CD_~_持续交付.md)
   * [CI ~ 持续集成](./C/CI_~_持续集成.md)
   * [CLI ~ 命令行](./C/CLI_~_命令行.md)
-  * [Canary releas ~ 金丝雀发布](./C/Canary_releas_~_金丝雀发布.md)
+  * [Canary Deployment ~ 金丝雀发布](./C/Canary_Deployment_~_金丝雀发布.md)
 * D
   * [DVCS ~ 分布式版本控制系统](./D/DVCS_~_分布式版本控制系统.md)
   * [Daily Build ~ 每日构建](./D/Daily_Build_~_每日构建.md)
@@ -27,7 +27,7 @@
   * [GUI](./G/GUI.md)
 * H
   * [HC](./H/HC.md)
-  * [H Model ~ H 模型](./H/H_Model_~_H%20模型.md)
+  * [H Model ~ H 模型](./H/H_Model_~_H_模型.md)
 * I
   * [IaaS ~ 基础设施即服务](./I/IaaS_~_基础设施即服务.md)
   * [Incremental Model ~ 增量模型](./I/Incremental_Model_~_增量模型.md)
@@ -55,12 +55,14 @@
   * [Scrum](./S/Scrum.md)
   * [Shebang](./S/Shebang.md)
   * [Spiral Model ~ 螺旋模型](./S/Spiral_Model_~_螺旋模型.md)
+  * [Staging Environment ~ 预发布环境](./S/Staging_Environment_~_预发布环境.md)
   * [Static Testing ~ 静态测试](./S/Static_Testing_~_静态测试.md)
 * V
   * [VCS ~ 版本控制系统](./V/VCS_~_版本控制系统.md)
   * [V Model ~ V 模型](./V/V_Model_~_V_模型.md)
 * W
-  * [W Model ~ W 模型](./W/W_Model_~_W%20模型.md)
+  * [W Model ~ W 模型](./W/W_Model_~_W_模型.md)
   * [Waterfall Model ~ 瀑布模型](./W/Waterfall_Model_~_瀑布模型.md)
 * 专题
   * [软件开发测试模型](./专题/软件开发测试模型.md)
+  * [软件开发环境](./专题/软件开发环境.md)
